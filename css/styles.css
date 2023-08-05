@@ -6,6 +6,12 @@
     --sidebar-button-colour: rgb(194, 122, 194);
     --sidebar-button-hover: rgb(189, 112, 189);
     --border-radius: 50px;
+    font-weight: bold;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -39,7 +45,7 @@ body {
 #user-menu {
     display: grid;
     grid-template-columns: 1fr 0.5fr 1fr;
-    grid-column: 3 / 4;
+    grid-column: 2 / 3  ;
     gap: 8px;
 }
 
@@ -103,7 +109,7 @@ body {
 #sidebar {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
     background-color: var(--sidebar-button-colour);
     grid-row: 1 / 4;
     grid-column: 1 / 2;
@@ -161,7 +167,7 @@ body {
     grid-template-columns: 4fr 1fr;
     grid-template-rows: 1fr;
     padding: 16px;
-    gap: 80px;
+    gap: 2rem;
 }
 
 #dashboard-right {
@@ -170,8 +176,16 @@ body {
     grid-template-rows: 1fr 1fr;
 }
 
-.dashboard-section-heading {
+#project-section-heading {
     grid-row: 1 / 2;
+}
+
+#announcement-section-heading {
+
+}
+
+#trending-section-heading {
+
 }
 
 #dashboard-projects {
@@ -184,7 +198,8 @@ body {
     display: grid;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
-
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 6fr;
 }
 
 #announcement-block-container {
