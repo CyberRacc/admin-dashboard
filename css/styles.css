@@ -32,8 +32,8 @@ body {
     grid-template-columns: 1fr;
     justify-content: center;
     align-items: center;
-    height: 200px;
     background-color: white;
+    padding: 16px 8px;
     box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
