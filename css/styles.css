@@ -130,6 +130,7 @@ body {
     grid-column: 2 / 3;
     width: 300px;
     align-items: start;
+    line-height: 0.5;
 }
 
 #actions {
@@ -255,10 +256,19 @@ body {
     background-color: white;
     border-radius: 4px;
     box-shadow: var(--global-box-shadow);
+    padding: 12px 16px;
 }
 
 .announcement-block {
     padding: 8px;
+}
+
+.announcement-block h4 {
+    font-weight: bold;
+}
+
+.announcement-block p {
+    font-weight: normal;
 }
 
 .announcement-block:nth-child(2) {
@@ -290,7 +300,7 @@ body {
     grid-template-columns: 48px auto;
     align-items: center;
     gap: 12px;
-    line-height: 1.0;
+    line-height: 0.5;
 }
 
 .trending-user {
@@ -331,6 +341,10 @@ body {
     box-shadow: var(--global-box-shadow);
     max-height: 400px;
     overflow-y: auto;
+}
+
+.dash-block p {
+    font-weight: normal;
 }
 
 .dash-block-buttons-container {
